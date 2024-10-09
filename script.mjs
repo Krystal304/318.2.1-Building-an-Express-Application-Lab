@@ -12,7 +12,7 @@
 // import express at the top of page
 import express from 'express';
 
-
+console.log('hello')
 
 // initialize express into a variable
 const app = express();
@@ -20,6 +20,10 @@ const app = express();
 // create port
 const PORT = 3000
 
+// add routues
+app.get ('/', (req, res) => {
+    res.render ()
+})
 
 // add listen 
 app.listen(PORT, ()=>{
